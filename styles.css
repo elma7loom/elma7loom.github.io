@@ -11,6 +11,51 @@ h1, p {
   text-align: center;
 }
 
+/* Centered Content */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% of the viewport height */
+  flex-direction: column;
+  padding-top: 80px; /* Adjust this depending on the height of the navbar */
+  box-sizing: border-box;
+}
+
+/* Search Section Styling */
+.search-section {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#search-bar {
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #d2b48c; /* Soft brownish border */
+  border-radius: 25px; /* Rounded edges for the input field */
+  outline: none;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #e67e22;
+}
+
 /* Navigation Bar */
 .navbar {
   background-color: #ff8c00; /* Orange */
@@ -21,6 +66,10 @@ h1, p {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for smooth transition */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; /* Rounded bottom edges for softer look */
 }
 
 .navbar ul {
@@ -48,38 +97,17 @@ h1, p {
   background-color: #e67e22;
 }
 
+/* Logo Placement */
 .logo img {
   width: 50px;
   height: auto;
+  margin-right: 10px; /* Space between logo and edge */
 }
 
-/* Main Content */
-.content {
-  padding-top: 80px; /* Ensure content isn't hidden by fixed navbar */
+/* Ensure full page centering */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.search-section {
-  text-align: center;
-  padding: 50px;
-}
-
-#search-bar {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ff8c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #e67e22;
-}
