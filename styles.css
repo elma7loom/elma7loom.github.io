@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+  color: #333;
+}
+
+h1, h2 {
+  color: #005f6b;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #40e0d0; /* Turquoise */
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar ul li {
+  float: left;
+  margin-right: 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 14px 20px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: #008b8b;
+  color: white;
+}
+
+/* Search Bar */
+#search-form {
+  display: inline-block;
+}
+
+#search-bar {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Section Styling */
+.home {
+  background-color: #e0ffff; /* Light Blue */
+  height: 100vh;
+}
+
+#topics {
+  background-color: #ffffff; /* White */
+}
+
+#newest-articles {
+  background-color: #e0ffff; /* Light Blue */
+}
+
+#about {
+  background-color: #ffffff; /* White */
+}
+
+/* Footer */
+.footer {
+  background-color: #40e0d0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
